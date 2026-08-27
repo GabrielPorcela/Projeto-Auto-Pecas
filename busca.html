@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Encontre sua Peça | Passini Distribuidora de Peças</title>
+<meta name="description" content="Encontre a peça certa por busca inteligente, por veículo, por código ou identificando por foto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar__inner">
+    <div class="topbar__contact">
+      <span class="topbar__phone">51 3579 7200</span>
+      <span>Atendimento a oficinas, lojas e frotistas</span>
+    </div>
+    <div class="topbar__links">
+      <a href="unidades.html" class="topbar__link">Nossas unidades</a>
+      <a href="ia.html" class="topbar__link topbar__link--ia">Passini IA</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <div class="site-header__row">
+      <a href="index.html" class="logo">
+        <span class="logo__badge">P</span>
+        <span class="logo__text">
+          <span class="logo__name">PASSINI</span>
+          <span class="logo__sub">DISTRIBUIDORA DE PEÇAS</span>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <div class="header-search">
+          <input class="header-search__input" type="text" placeholder="Buscar peça, código ou veículo">
+          <button class="header-search__btn" type="button" aria-label="Buscar peça">⌕</button>
+        </div>
+        <a href="orcamento.html" class="quote-btn" aria-label="Meu orçamento">
+          <span class="quote-btn__icon">▣</span>
+          <span class="quote-btn__count">2</span>
+        </a>
+        <a href="contato.html" class="btn-specialist">Falar com especialista</a>
+      </div>
+
+      <div class="mobile-actions">
+        <a href="busca.html" class="mobile-icon-btn" aria-label="Buscar">⌕</a>
+        <button class="mobile-menu-btn" type="button" aria-label="Abrir menu">
+          <span class="bar"></span><span class="bar bar--mid"></span><span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="site-nav">
+      <a href="index.html" class="site-nav__link">Início</a>
+      <a href="busca.html" class="site-nav__link site-nav__link--active">Encontre sua Peça</a>
+      <a href="produtos.html" class="site-nav__link">Produtos</a>
+      <a href="oficinas.html" class="site-nav__link">Para Oficinas</a>
+      <a href="clube.html" class="site-nav__link">Clube do Especialista</a>
+      <a href="unidades.html" class="site-nav__link">Nossas Unidades</a>
+      <a href="sobre.html" class="site-nav__link">Sobre a Passini</a>
+      <a href="ia.html" class="site-nav__ia">Passini IA →</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container page-main">
+  <span class="eyebrow">Encontre sua peça</span>
+  <h1 class="page-title search-hero-title">Encontre exatamente o que você precisa</h1>
+
+  <div class="search-box">
+    <div class="search-box__row">
+      <input class="search-box__input" type="text" placeholder="Digite o veículo, peça, código ou o que você está procurando...">
+      <button class="btn btn--yellow search-box__btn" type="button">Encontrar minha peça</button>
+    </div>
+  </div>
+
+  <div class="find-cards-grid" style="margin-top:24px">
+    <a href="ia.html" class="find-card">
+      <span class="find-card__icon">🤖</span>
+      <h3 class="find-card__title">Busca inteligente</h3>
+      <p class="find-card__desc">Descreva o que você precisa e nosso assistente ajuda a encontrar a peça.</p>
+      <span class="find-card__cta">Conversar →</span>
+    </a>
+    <a href="busca.html" class="find-card">
+      <span class="find-card__icon">🚗</span>
+      <h3 class="find-card__title">Por veículo</h3>
+      <p class="find-card__desc">Selecione marca, modelo, ano e motorização.</p>
+      <span class="find-card__cta">Selecionar →</span>
+    </a>
+    <a href="resultados.html" class="find-card">
+      <span class="find-card__icon">🔎</span>
+      <h3 class="find-card__title">Por código</h3>
+      <p class="find-card__desc">Digite o código da peça.</p>
+      <span class="find-card__cta">Buscar →</span>
+    </a>
+    <a href="busca.html" class="find-card">
+      <span class="find-card__icon">📷</span>
+      <h3 class="find-card__title">Identificar peça</h3>
+      <p class="find-card__desc">Envie uma foto e descubra qual peça pode ser.</p>
+      <span class="find-card__cta">Enviar foto →</span>
+    </a>
+  </div>
+
+  <div class="dual-finder">
+    <div>
+      <h2>Selecione seu veículo</h2>
+      <div class="vehicle-finder-fields" style="margin-top:22px">
+        <label class="vehicle-field">
+          <span class="vehicle-field__label">Marca</span>
+          <select class="vehicle-field__select">
+            <option selected>Chevrolet</option><option>Volkswagen</option><option>Fiat</option><option>Toyota</option><option>Ford</option><option>Hyundai</option>
+          </select>
+        </label>
+        <label class="vehicle-field">
+          <span class="vehicle-field__label">Modelo</span>
+          <select class="vehicle-field__select">
+            <option selected>Onix</option><option>Prisma</option><option>Gol</option><option>Strada</option><option>Corolla</option><option>Hilux</option>
+          </select>
+        </label>
+        <label class="vehicle-field">
+          <span class="vehicle-field__label">Ano</span>
+          <select class="vehicle-field__select">
+            <option>2023</option><option>2022</option><option>2021</option><option selected>2020</option><option>2019</option><option>2018</option>
+          </select>
+        </label>
+        <label class="vehicle-field">
+          <span class="vehicle-field__label">Motor</span>
+          <select class="vehicle-field__select">
+            <option selected>1.0 Turbo</option><option>1.0</option><option>1.4</option><option>1.6</option><option>1.8</option><option>2.8 Diesel</option>
+          </select>
+        </label>
+      </div>
+      <a href="resultados.html" class="btn btn--navy btn--block" style="margin-top:18px">Ver peças compatíveis</a>
+    </div>
+    <div>
+      <h2>Identificar por foto</h2>
+      <p class="section-lead" style="font-size:16px">Envie uma foto da peça. Nosso especialista analisa e retorna as opções compatíveis.</p>
+      <div class="upload-box">
+        <div class="upload-box__icon">📷</div>
+        <div class="upload-box__title">Arraste a foto ou toque para enviar</div>
+        <div class="upload-box__hint">JPG ou PNG até 8 MB</div>
+        <a href="ia.html" class="upload-box__btn" style="display:inline-block; text-decoration:none">Selecionar arquivo</a>
+      </div>
+      <p class="demo-notice">Interface de demonstração: a identificação automática por imagem ainda não está ativa.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand__logo">
+          <span class="footer-brand__badge">P</span>
+          <span class="logo__text">
+            <span class="footer-brand__name">PASSINI</span>
+            <span class="footer-brand__sub">DISTRIBUIDORA DE PEÇAS</span>
+          </span>
+        </div>
+        <p class="footer-brand__desc">Distribuidora de auto peças com atendimento especializado a oficinas, lojas e frotistas.</p>
+        <div class="footer-brand__phone">51 3579 7200</div>
+      </div>
+      <div>
+        <div class="footer-col__title">Passini</div>
+        <div class="footer-col__links">
+          <a href="sobre.html">Sobre a Passini</a>
+          <a href="unidades.html">Nossas unidades</a>
+          <a href="contato.html">Contato</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col__title">Produtos</div>
+        <div class="footer-col__links">
+          <a href="produtos.html">Catálogo</a>
+          <a href="busca.html">Encontre sua peça</a>
+          <a href="busca.html">Busca por veículo</a>
+          <a href="ia.html">Passini IA</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col__title">Para oficinas</div>
+        <div class="footer-col__links">
+          <a href="oficinas.html">Soluções para oficinas</a>
+          <a href="orcamento.html">Solicitar orçamento</a>
+          <a href="oficinas.html">Condições comerciais</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col__title">Conteúdo</div>
+        <div class="footer-col__links">
+          <a href="clube.html">Clube do Especialista</a>
+          <a href="clube.html">Dicas técnicas</a>
+          <a href="clube.html">Materiais técnicos</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Passini Distribuidora de Auto Peças. Protótipo de demonstração.</span>
+      <div class="footer-bottom__legal">
+        <a href="#">Política de privacidade</a>
+        <a href="#">Termos de uso</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-bottom-nav">
+  <a href="busca.html" class="mobile-bottom-nav__btn mobile-bottom-nav__btn--navy">Buscar peça</a>
+  <a href="ia.html" class="mobile-bottom-nav__btn mobile-bottom-nav__btn--outline">Passini IA</a>
+  <a href="contato.html" class="mobile-bottom-nav__btn mobile-bottom-nav__btn--yellow">WhatsApp</a>
+</div>
+
+</body>
+</html>
