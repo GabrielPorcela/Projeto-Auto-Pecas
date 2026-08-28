@@ -1,5 +1,24 @@
 # Projeto-Auto-Peças
-Site Completo 
+Site Completo
+
+---
+
+## Como rodar (etapa "Claude Code" implementada)
+
+O texto abaixo desta seção é o briefing original (design + funcionalidade) usado para construir o projeto — mantido como referência de requisitos. O que segue é a documentação real do que foi implementado.
+
+```bash
+npm run build   # gera o site estático final em dist/ (sem dependências de runtime)
+npm run dev     # build + serve dist/ localmente em http://localhost:4173
+```
+
+**Arquitetura:** `src/build.js` é um script Node sem dependências que monta as páginas finais a partir de `src/partials`/`src/pages` + `data/*.json`, incluindo uma página por produto (`dist/produto/<slug>.html`), `sitemap.xml` e `robots.txt`. Os arquivos `.html` que antes ficavam na raiz do repositório foram movidos para `src/pages/` (fonte) — o que é servido de verdade é sempre `dist/`, gerado a cada build. `data/*.json` é a única fonte de dados mockados (produtos, categorias, veículos, unidades, estoque); `js/services/*` é a camada que os consome tanto em build time quanto no navegador (busca, veículo, IA baseada em regras, carrinho, WhatsApp).
+
+**O que é funcional:** busca com autocomplete, busca por veículo (marca→modelo→ano→motor em cascata), resultados com filtros/ordenação/estados de loading-vazio-erro, páginas de produto reais e distintas por item, Passini IA (interpretador por palavras-chave sobre o catálogo — não é um LLM real), carrinho de orçamento (localStorage), formulários de orçamento/contato com validação real, links reais de WhatsApp (`wa.me`) quando um número for confirmado, menu mobile funcional, painel administrativo de protótipo em `/admin` (sem autenticação, não linkado na navegação pública).
+
+**O que continua sendo dado de demonstração, de propósito:** preços, estoque, endereços/telefones/horários de unidades ("a confirmar") e qualquer texto institucional — nada disso deve ser tratado como informação real da Passini até ser confirmado.
+
+---
 
 CLAUDE DESIGN 
 Quero que você atue como um UX/UI Designer sênior especializado em sites institucionais, e-commerce, automotive e experiências digitais modernas.

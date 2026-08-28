@@ -1,0 +1,22 @@
+<!--META {"title":"Leads | Painel Administrativo Passini","description":"Leads de contato registrados neste navegador (protótipo).","active":null,"mainClass":"container page-main","scripts":["pages/admin/leads.js"]}-->
+  <span class="eyebrow">Área interna</span>
+  <h1 class="page-title">Leads (contato)</h1>
+  <div class="admin-banner">Mostra apenas as mensagens enviadas <strong>neste navegador</strong> pela página de Contato (localStorage). Não reflete leads de outros visitantes.</div>
+
+  <nav class="admin-nav">
+    <a href="index.html">Dashboard</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="estoque.html">Estoque</a>
+    <a href="orcamentos.html">Orçamentos</a>
+    <a href="leads.html" aria-current="page">Leads</a>
+  </nav>
+
+  <div class="admin-table-wrap">
+    <table class="admin-table">
+      <thead>
+        <tr><th>Data</th><th>Nome</th><th>Contato</th><th>Veículo</th><th>Mensagem</th></tr>
+      </thead>
+      <tbody id="admin-leads-body"></tbody>
+    </table>
+  </div>
+  <p class="empty-state" id="admin-leads-empty" hidden>Nenhum lead registrado neste navegador ainda.</p>

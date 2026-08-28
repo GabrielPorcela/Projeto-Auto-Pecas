@@ -1,0 +1,46 @@
+<!--META {"title":"Meu Orçamento | Passini Distribuidora de Peças","description":"Monte sua lista de peças e solicite orçamento à Passini Distribuidora de Peças.","active":null,"mainClass":"container container--1000 page-main","scripts":["pages/orcamento.js"]}-->
+  <span class="eyebrow">Orçamento</span>
+  <h1 class="page-title" style="font-size: clamp(28px, 3.8vw, 46px)">Sua lista de peças</h1>
+
+  <div class="quote-list" id="quote-list" aria-live="polite">
+    <p class="empty-state" id="quote-list-empty" hidden>Sua lista de orçamento está vazia. <a href="produtos.html">Ver catálogo</a> para adicionar peças.</p>
+  </div>
+
+  <form class="form-panel orcamento-form-panel" id="orcamento-form" novalidate>
+    <h2>Seus dados</h2>
+    <div class="form-fields">
+      <label class="form-field">
+        <span class="form-field__label">Nome</span>
+        <input class="form-field__input" type="text" name="nome" placeholder="Seu nome" required aria-describedby="err-nome">
+        <span class="form-field__error" id="err-nome" aria-live="polite"></span>
+      </label>
+      <label class="form-field">
+        <span class="form-field__label">Telefone</span>
+        <input class="form-field__input" type="tel" name="telefone" placeholder="(00) 0000-0000" required aria-describedby="err-telefone">
+        <span class="form-field__error" id="err-telefone" aria-live="polite"></span>
+      </label>
+      <label class="form-field">
+        <span class="form-field__label">WhatsApp</span>
+        <input class="form-field__input" type="tel" name="whatsapp" placeholder="(00) 00000-0000" aria-describedby="err-whatsapp">
+        <span class="form-field__error" id="err-whatsapp" aria-live="polite"></span>
+      </label>
+      <label class="form-field">
+        <span class="form-field__label">E-mail</span>
+        <input class="form-field__input" type="email" name="email" placeholder="nome@email.com" required aria-describedby="err-email">
+        <span class="form-field__error" id="err-email" aria-live="polite"></span>
+      </label>
+      <label class="form-field">
+        <span class="form-field__label">Veículo</span>
+        <input class="form-field__input" type="text" name="veiculo" placeholder="Marca, modelo, ano e motor">
+      </label>
+    </div>
+    <label class="form-field form-field--full">
+      <span class="form-field__label">Observação</span>
+      <textarea class="form-field__textarea" name="observacao" rows="3" placeholder="Informações adicionais sobre o veículo ou a peça"></textarea>
+    </label>
+    <div class="form-field__summary" id="orcamento-form-summary" role="alert" aria-live="assertive" hidden></div>
+    <button class="btn btn--yellow btn--block" type="submit" style="margin-top:20px">Solicitar orçamento</button>
+    <a class="btn btn--outline btn--block" style="margin-top:10px; text-align:center" id="orcamento-whatsapp-btn" href="contato.html" aria-disabled="true">Enviar por WhatsApp (em breve)</a>
+    <div id="orcamento-success" class="demo-notice" role="status" hidden>Orçamento registrado neste protótipo. Em produção, isso será enviado ao CRM/WhatsApp da Passini.</div>
+    <p class="demo-notice" style="margin-top:12px">Protótipo: o envio ao CRM/WhatsApp será conectado na etapa de implementação.</p>
+  </form>

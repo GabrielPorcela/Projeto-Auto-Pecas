@@ -1,0 +1,21 @@
+<!--META {"title":"Estoque | Painel Administrativo Passini","description":"Estoque de demonstração por produto e unidade.","active":null,"mainClass":"container page-main","scripts":["pages/admin/estoque.js"]}-->
+  <span class="eyebrow">Área interna</span>
+  <h1 class="page-title">Estoque por unidade</h1>
+  <div class="admin-banner">Junta <code>data/produtos.json</code> × <code>data/unidades.json</code> × <code>data/estoque.json</code>. Em produção isso viria do ERP.</div>
+
+  <nav class="admin-nav">
+    <a href="index.html">Dashboard</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="estoque.html" aria-current="page">Estoque</a>
+    <a href="orcamentos.html">Orçamentos</a>
+    <a href="leads.html">Leads</a>
+  </nav>
+
+  <div class="admin-table-wrap">
+    <table class="admin-table">
+      <thead>
+        <tr><th>Produto</th><th>Código</th><th>Unidade</th><th>Quantidade</th><th>Disponível</th></tr>
+      </thead>
+      <tbody id="admin-estoque-body"></tbody>
+    </table>
+  </div>

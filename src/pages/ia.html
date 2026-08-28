@@ -1,0 +1,45 @@
+<!--META {"title":"Passini IA | Passini Distribuidora de Peças","description":"Converse com o assistente virtual Passini para encontrar peças, consultar aplicações e descobrir opções compatíveis com seu veículo.","active":"index","mainClass":"ia-page","scripts":["pages/ia.js"]}-->
+  <div class="ia-hero">
+    <div class="ia-hero__inner">
+      <div class="ia-hero__badge-row">
+        <span class="ia-hero__badge">🤖</span>
+        <span class="ia-hero__tag">Passini IA</span>
+      </div>
+      <h1 class="ia-hero__title">Seu especialista virtual em autopeças.</h1>
+      <p class="ia-hero__lead">Encontre peças, consulte aplicações e descubra opções compatíveis com seu veículo.</p>
+    </div>
+  </div>
+
+  <div class="chat-wrap">
+    <div class="chat-panel">
+      <div class="chat-panel__header">
+        <span class="chat-avatar">P</span>
+        <div>
+          <div class="chat-panel__title">Assistente Passini</div>
+          <div class="chat-panel__status"><span class="status-dot"></span>Consultando o catálogo Passini</div>
+        </div>
+      </div>
+
+      <div class="chat-body" id="chat-body" aria-live="polite">
+        <div class="chat-message">
+          <span class="chat-avatar">P</span>
+          <div class="chat-message__bubble">Olá! Sou o assistente Passini. Posso ajudar você a encontrar uma peça.
+Diga o veículo e a peça — por exemplo: "pastilha de freio para Onix 2020".</div>
+        </div>
+      </div>
+
+      <div class="chat-footer">
+        <div class="chat-suggestions">
+          <button class="suggestion-chip" type="button" data-suggestion="Preciso de pastilha de freio para Onix 2020">🚗 Encontrar peça para meu carro</button>
+          <button class="suggestion-chip" type="button" data-suggestion="Quero identificar uma peça pelo código">🔧 Identificar uma peça</button>
+          <button class="suggestion-chip" type="button" data-suggestion="Tem filtro de óleo para Hilux 2021 disponível?">📦 Consultar disponibilidade</button>
+          <a href="busca.html" class="suggestion-chip" style="text-decoration:none; display:inline-block">📷 Enviar foto da peça</a>
+        </div>
+        <form class="chat-input-row" id="chat-form">
+          <input class="chat-input" type="text" placeholder="Descreva a peça e o veículo..." id="chat-input" autocomplete="off">
+          <button class="chat-send-btn" type="submit">Enviar</button>
+        </form>
+        <p class="chat-disclaimer">Protótipo de interface. As respostas usam o catálogo de demonstração e não representam estoque real. O assistente interpreta sua mensagem por palavras-chave — não é uma IA generativa real.</p>
+      </div>
+    </div>
+  </div>

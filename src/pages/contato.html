@@ -1,0 +1,64 @@
+<!--META {"title":"Fale com um Especialista | Passini Distribuidora de Peças","description":"Fale com um especialista da Passini Distribuidora de Peças. Diga o veículo e a peça que você procura.","active":null,"mainClass":"container container--1100 page-main","scripts":["pages/contato.js"]}-->
+  <span class="eyebrow">Contato</span>
+  <h1 class="page-title" style="font-size: clamp(28px, 3.8vw, 48px)">Fale com um especialista</h1>
+  <p class="page-lead" style="font-size:17px; max-width:52ch">Diga o veículo e a peça que você procura. Nosso time confere a aplicação antes de responder.</p>
+
+  <div class="contact-layout">
+    <form class="form-panel contact-form-panel" id="contato-form" novalidate>
+      <div class="form-fields" style="margin-top:0">
+        <label class="form-field">
+          <span class="form-field__label">Nome</span>
+          <input class="form-field__input" type="text" name="nome" placeholder="Seu nome" required aria-describedby="err-nome">
+          <span class="form-field__error" id="err-nome" aria-live="polite"></span>
+        </label>
+        <label class="form-field">
+          <span class="form-field__label">Telefone</span>
+          <input class="form-field__input" type="tel" name="telefone" placeholder="(00) 0000-0000" required aria-describedby="err-telefone">
+          <span class="form-field__error" id="err-telefone" aria-live="polite"></span>
+        </label>
+        <label class="form-field">
+          <span class="form-field__label">WhatsApp</span>
+          <input class="form-field__input" type="tel" name="whatsapp" placeholder="(00) 00000-0000" aria-describedby="err-whatsapp">
+          <span class="form-field__error" id="err-whatsapp" aria-live="polite"></span>
+        </label>
+        <label class="form-field">
+          <span class="form-field__label">E-mail</span>
+          <input class="form-field__input" type="email" name="email" placeholder="nome@email.com" required aria-describedby="err-email">
+          <span class="form-field__error" id="err-email" aria-live="polite"></span>
+        </label>
+        <label class="form-field">
+          <span class="form-field__label">Veículo</span>
+          <input class="form-field__input" type="text" name="veiculo" placeholder="Marca, modelo, ano e motor">
+        </label>
+      </div>
+      <label class="form-field form-field--full">
+        <span class="form-field__label">Como podemos ajudar</span>
+        <textarea class="form-field__textarea" name="mensagem" rows="4" placeholder="Ex.: preciso de pastilha de freio dianteira para Onix 2020 1.0 turbo" required aria-describedby="err-mensagem"></textarea>
+        <span class="form-field__error" id="err-mensagem" aria-live="polite"></span>
+      </label>
+      <div class="form-field__summary" id="contato-form-summary" role="alert" aria-live="assertive" hidden></div>
+      <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:18px">
+        <button class="btn btn--yellow" style="flex:1 1 200px" type="submit">Enviar mensagem</button>
+        <a class="btn btn--outline" style="flex:1 1 180px; text-align:center" type="button" id="contato-whatsapp-btn" href="contato.html" aria-disabled="true">WhatsApp (em breve)</a>
+      </div>
+      <div id="contato-success" class="demo-notice" role="status" hidden>Mensagem registrada neste protótipo. Em produção, isso será enviado ao CRM/atendimento da Passini.</div>
+    </form>
+
+    <div class="contact-sidebar">
+      <div class="contact-sidebar__title">Atendimento</div>
+      <div class="contact-sidebar__rows">
+        <div>
+          <div class="contact-row__label">Telefone</div>
+          <div class="contact-row__value">51 3579 7200</div>
+        </div>
+        <div>
+          <div class="contact-row__label">WhatsApp</div>
+          <div class="contact-row__value contact-row__value--muted">a confirmar</div>
+        </div>
+        <div>
+          <div class="contact-row__label">Horário</div>
+          <div class="contact-row__value contact-row__value--muted">a confirmar</div>
+        </div>
+      </div>
+    </div>
+  </div>

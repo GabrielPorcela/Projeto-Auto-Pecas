@@ -239,6 +239,10 @@ img { max-width: 100%; display: block; }
   .header-actions { display: none; }
   .mobile-actions { display: flex; }
   .mobile-bottom-nav { display: grid; }
+  /* O menu principal só some no mobile quando o hamburger existe para reabri-lo. */
+  .site-nav { display: none; }
+  .site-nav--open { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
+  .site-nav--open .site-nav__ia { margin-left: 0; }
 }
 
 /* ---------- Generic section helpers ---------- */
@@ -805,3 +809,74 @@ img { max-width: 100%; display: block; }
 .footer-bottom__legal { display: flex; flex-wrap: wrap; gap: 20px; }
 .footer-bottom__legal a { color: var(--footer-text); }
 .footer-bottom__legal a:hover { color: var(--yellow); }
+
+/* ==========================================================================
+   ADIÇÕES — funcionalidade (busca, formulários, acessibilidade, admin)
+   Todo o CSS acima desta linha é o design original e não foi alterado; este
+   bloco só acrescenta o que a camada funcional precisa.
+   ========================================================================== */
+
+/* Acessibilidade: skip link + foco visível em qualquer elemento interativo */
+.skip-link {
+  position: absolute; left: 12px; top: -60px; z-index: 1000; background: var(--navy-deep); color: var(--white);
+  padding: 10px 16px; border-radius: 4px; font-weight: 700; font-size: 14px; transition: top .15s;
+}
+.skip-link:focus { top: 12px; }
+
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible,
+.filter-chip:focus-visible, .category-card:focus-visible, .example-chip:focus-visible {
+  outline: 3px solid var(--blue); outline-offset: 2px;
+}
+
+/* Autocomplete de busca (hero + busca.html) */
+.hero__search-suggestions, #busca-suggestions {
+  position: relative; margin-top: -8px; background: var(--white); border: 1px solid var(--border-2);
+  border-top: none; border-radius: 0 0 8px 8px; max-height: 280px; overflow-y: auto; z-index: 20;
+}
+.search-suggestion { display: block; padding: 11px 16px; font-size: 14.5px; color: var(--ink); border-top: 1px solid var(--border-4); }
+.search-suggestion:first-child { border-top: none; }
+.search-suggestion:hover, .search-suggestion:focus-visible { background: var(--blue-light); color: var(--blue); }
+
+/* Formulários (orçamento/contato): erro inline + resumo de validação */
+.form-field__input--invalid, .form-field__input:invalid:not(:placeholder-shown) { border-color: var(--red); }
+.form-field__error { font-size: 12.5px; color: var(--red); min-height: 16px; }
+.form-field__summary {
+  margin-top: 14px; padding: 12px 14px; background: #FDECEC; border: 1px solid #F3C6C6; border-radius: 6px;
+  color: var(--red); font-size: 14px; font-weight: 600;
+}
+a.btn.is-disabled, a[aria-disabled="true"].btn, .btn:disabled { opacity: .55; pointer-events: none; }
+
+/* Estoque indisponível (badge complementar a badge--stock) */
+.badge--stock-out { background: var(--bg-soft-2); color: var(--gray-3); }
+
+/* Menu mobile agora funcional: nav some/aparece via .site-nav--open (ver
+   media query 899px acima); o botão ganha um estado "aberto" visual. */
+.mobile-menu-btn[aria-expanded="true"] { background: var(--blue); }
+
+/* Painel administrativo (protótipo, sem autenticação) — reaproveita tokens
+   e componentes existentes (.btn, .badge, .card) em vez de criar linguagem
+   visual nova; só a tabela precisa de estilo próprio. */
+.admin-banner {
+  background: var(--blue-light); border: 1px solid var(--blue-border); border-radius: 6px;
+  padding: 12px 16px; font-size: 14px; color: var(--navy-deep); margin-bottom: 24px;
+}
+.admin-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 32px; }
+.admin-stat { border: 1px solid var(--border); border-radius: 8px; padding: 18px 20px; background: var(--bg-panel); }
+.admin-stat__value { font-family: var(--font-display); font-weight: 800; font-size: 30px; color: var(--navy-deep); }
+.admin-stat__label { font-size: 13px; color: var(--gray); margin-top: 4px; }
+.admin-table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; }
+.admin-table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+.admin-table th, .admin-table td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--border-4); white-space: nowrap; }
+.admin-table th { background: var(--bg-soft-2); font-weight: 700; color: var(--gray-dark); font-size: 12.5px; text-transform: uppercase; letter-spacing: .05em; }
+.admin-table tr:last-child td { border-bottom: none; }
+.admin-nav { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 28px; }
+.admin-nav a { font-size: 14px; font-weight: 600; color: var(--blue); }
+.admin-nav a[aria-current="page"] { color: var(--navy-deep); text-decoration: underline; }
+
+/* Breakpoint intermediário (tablet) — os grids já usam auto-fit/minmax, aqui
+   só ajustamos densidade/tipografia onde faz diferença real. */
+@media (max-width: 640px) {
+  .results-layout { grid-template-columns: 1fr; }
+  .filters-aside { order: 2; }
+  .product-detail { grid-template-columns: 1fr; }
+}

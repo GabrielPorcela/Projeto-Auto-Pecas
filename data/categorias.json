@@ -1,0 +1,14 @@
+[
+  { "id": "freios", "nome": "Freios", "inicial": "F", "descricao": "Pastilhas, discos, fluidos e componentes do sistema de freio." },
+  { "id": "suspensao", "nome": "Suspensão", "inicial": "S", "descricao": "Amortecedores, molas e componentes de suspensão." },
+  { "id": "motor", "nome": "Motor", "inicial": "M", "descricao": "Componentes e peças de motor." },
+  { "id": "eletrica", "nome": "Elétrica", "inicial": "E", "descricao": "Componentes elétricos e eletrônicos embarcados." },
+  { "id": "arrefecimento", "nome": "Arrefecimento", "inicial": "A", "descricao": "Bombas d'água, radiadores e sistema de arrefecimento." },
+  { "id": "transmissao", "nome": "Transmissão", "inicial": "T", "descricao": "Componentes do sistema de transmissão." },
+  { "id": "embreagem", "nome": "Embreagem", "inicial": "E", "descricao": "Kits e componentes de embreagem." },
+  { "id": "direcao", "nome": "Direção", "inicial": "D", "descricao": "Componentes do sistema de direção." },
+  { "id": "filtros", "nome": "Filtros", "inicial": "F", "descricao": "Filtros de óleo, ar, combustível e cabine." },
+  { "id": "correias", "nome": "Correias", "inicial": "C", "descricao": "Correias dentadas, poly-v e acessórios de sincronismo." },
+  { "id": "ar-condicionado", "nome": "Ar-condicionado", "inicial": "A", "descricao": "Componentes do sistema de ar-condicionado." },
+  { "id": "acessorios", "nome": "Acessórios", "inicial": "A", "descricao": "Acessórios diversos para o veículo." }
+]
