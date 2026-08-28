@@ -1,0 +1,58 @@
+<!--META {"title":"Produto | Passini Distribuidora de Peças","description":"Produto Passini Distribuidora de Peças.","active":"produtos","mainClass":"container page-main--tight","scripts":["pages/produto.js"]}-->
+  <div class="breadcrumb">
+    <a href="../index.html">Início</a><span>/</span><a href="../resultados.html">Resultados</a><span>/</span><span class="breadcrumb__current">{{PRODUTO_NOME}}</span>
+  </div>
+
+  <div class="product-detail">
+    <div class="product-gallery">
+      <div class="product-gallery__main">foto principal do produto</div>
+      <div class="product-gallery__thumbs">
+        <div class="product-gallery__thumb"></div>
+        <div class="product-gallery__thumb"></div>
+        <div class="product-gallery__thumb"></div>
+        <div class="product-gallery__thumb"></div>
+      </div>
+    </div>
+
+    <div class="product-info">
+      <div class="product-badges">
+        <span class="badge--marca">{{PRODUTO_MARCA}}</span>
+        <span class="badge--categoria">{{PRODUTO_CATEGORIA}}</span>
+      </div>
+      <h1 class="product-info__title">{{PRODUTO_NOME}}</h1>
+      <div class="product-info__code">Código {{PRODUTO_CODIGO}}</div>
+      <p class="product-info__desc">{{PRODUTO_DESCRICAO}}</p>
+
+      <div class="product-stats">
+        <div class="stat-box">
+          <div class="stat-box__label">Disponibilidade</div>
+          <div class="stat-box__value stat-box__value--green">{{PRODUTO_DISPONIBILIDADE}}</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box__label">Unidade</div>
+          <div class="stat-box__value" data-product-unit="{{PRODUTO_ID}}">consultando…</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box__label">Preço</div>
+          <div class="stat-box__value">{{PRODUTO_PRECO}}</div>
+        </div>
+      </div>
+
+      <div class="product-actions">
+        <button type="button" class="btn btn--yellow" data-add-to-cart="{{PRODUTO_ID}}">Adicionar ao orçamento</button>
+        <a href="../contato.html" class="btn btn--outline">Falar com especialista</a>
+      </div>
+
+      <div class="compat-table">
+        <div class="compat-table__header">Veículos compatíveis</div>
+{{COMPAT_ROWS}}
+      </div>
+    </div>
+  </div>
+
+  <div class="related-section">
+    <h2>Produtos relacionados</h2>
+    <div class="related-grid">
+{{RELATED_CARDS}}
+    </div>
+  </div>

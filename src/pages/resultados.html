@@ -1,0 +1,66 @@
+<!--META {"title":"Resultados da busca | Passini Distribuidora de Peças","description":"Resultados de busca de peças compatíveis com filtros por marca, categoria, disponibilidade e unidade.","active":"busca","scripts":["pages/resultados.js"]}-->
+  <div class="results-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Início</a><span>/</span><a href="busca.html">Encontre sua peça</a><span>/</span><span class="breadcrumb__current">Resultados</span>
+      </div>
+      <h1 class="results-title" id="results-title">Resultados da busca</h1>
+      <div class="results-meta">
+        <span class="results-meta__vehicle" id="results-vehicle" hidden></span>
+        <span class="results-meta__count" id="results-count" aria-live="polite">Carregando…</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container results-layout">
+    <aside class="filters-aside">
+      <div class="filters-aside__header">
+        <span class="filters-aside__title">Filtros</span>
+        <button class="filters-aside__clear" type="button" id="filters-clear">Limpar</button>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-group__title">Marca</div>
+        <div class="filter-group__options" id="filter-marca" data-filter-group="marca"></div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-group__title">Categoria</div>
+        <div class="filter-group__options" id="filter-categoria" data-filter-group="categoria"></div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-group__title">Disponibilidade</div>
+        <div class="filter-group__options" id="filter-disponibilidade" data-filter-group="disponibilidade">
+          <button class="filter-chip" type="button" data-value="disponivel">Em estoque</button>
+          <button class="filter-chip" type="button" data-value="indisponivel">Sob consulta</button>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-group__title">Unidade</div>
+        <div class="filter-group__options" id="filter-unidade" data-filter-group="unidade"></div>
+      </div>
+
+      <label class="filter-group">
+        <div class="filter-group__title">Ordenar por</div>
+        <select class="vehicle-field__select" id="results-sort">
+          <option value="relevancia">Relevância</option>
+          <option value="nome">Nome A-Z</option>
+          <option value="marca">Marca A-Z</option>
+        </select>
+      </label>
+    </aside>
+
+    <section class="results-section">
+      <div id="results-state-loading" class="demo-notice" role="status" aria-live="polite">Carregando catálogo…</div>
+      <div id="results-state-error" class="demo-notice" role="alert" hidden>Não foi possível carregar o catálogo agora. <button type="button" id="results-retry" class="filter-chip">Tentar novamente</button></div>
+      <div id="results-state-empty" class="empty-state" hidden>
+        <p>Nenhuma peça encontrada com esses filtros.</p>
+        <a href="produtos.html" class="btn btn--outline">Ver catálogo completo</a>
+      </div>
+      <div class="results-grid" id="results-grid" aria-live="polite"></div>
+      <p class="demo-notice" style="margin-top:22px">Catálogo de <strong>demonstração</strong>. Códigos, aplicações e disponibilidade serão alimentados pela base oficial da Passini na integração com o ERP.</p>
+      <noscript><p class="demo-notice">Ative o JavaScript para ver os resultados, ou visite o <a href="produtos.html">catálogo completo</a>.</p></noscript>
+    </section>
+  </div>

@@ -1,0 +1,22 @@
+<!--META {"title":"Orçamentos | Painel Administrativo Passini","description":"Orçamentos solicitados neste navegador (protótipo).","active":null,"mainClass":"container page-main","scripts":["pages/admin/orcamentos.js"]}-->
+  <span class="eyebrow">Área interna</span>
+  <h1 class="page-title">Orçamentos</h1>
+  <div class="admin-banner">Mostra apenas os orçamentos enviados <strong>neste navegador</strong> (armazenados em localStorage pelo protótipo). Não reflete pedidos de outros visitantes nem um CRM real.</div>
+
+  <nav class="admin-nav">
+    <a href="index.html">Dashboard</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="estoque.html">Estoque</a>
+    <a href="orcamentos.html" aria-current="page">Orçamentos</a>
+    <a href="leads.html">Leads</a>
+  </nav>
+
+  <div class="admin-table-wrap">
+    <table class="admin-table">
+      <thead>
+        <tr><th>Data</th><th>Nome</th><th>Contato</th><th>Veículo</th><th>Itens</th></tr>
+      </thead>
+      <tbody id="admin-orcamentos-body"></tbody>
+    </table>
+  </div>
+  <p class="empty-state" id="admin-orcamentos-empty" hidden>Nenhum orçamento registrado neste navegador ainda.</p>

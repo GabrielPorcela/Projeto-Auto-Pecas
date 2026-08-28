@@ -1,0 +1,13 @@
+{
+  "name": "passini-distribuidora",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Protótipo funcional da Passini Distribuidora de Auto Peças — build estático sem dependências de runtime.",
+  "scripts": {
+    "build": "node src/build.js",
+    "dev": "npm run build && npx --yes serve dist -l 4173"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

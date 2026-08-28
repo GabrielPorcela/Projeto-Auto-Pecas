@@ -1,0 +1,30 @@
+[
+  {
+    "marca": "Chevrolet",
+    "modelos": [
+      { "modelo": "Onix", "anos": [{ "anoInicio": 2019, "anoFim": 2023, "motores": ["1.0", "1.0 Turbo"] }] },
+      { "modelo": "Onix Plus", "anos": [{ "anoInicio": 2020, "anoFim": 2023, "motores": ["1.0 Turbo"] }] },
+      { "modelo": "Prisma", "anos": [{ "anoInicio": 2013, "anoFim": 2019, "motores": ["1.4"] }] }
+    ]
+  },
+  {
+    "marca": "Volkswagen",
+    "modelos": [
+      { "modelo": "Gol", "anos": [{ "anoInicio": 2013, "anoFim": 2019, "motores": ["1.6"] }] }
+    ]
+  },
+  {
+    "marca": "Fiat",
+    "modelos": [
+      { "modelo": "Strada", "anos": [{ "anoInicio": 2012, "anoFim": 2020, "motores": ["1.4"] }] },
+      { "modelo": "Palio", "anos": [{ "anoInicio": 2010, "anoFim": 2017, "motores": ["1.0", "1.4"] }] }
+    ]
+  },
+  {
+    "marca": "Toyota",
+    "modelos": [
+      { "modelo": "Corolla", "anos": [{ "anoInicio": 2015, "anoFim": 2020, "motores": ["1.8", "2.0"] }] },
+      { "modelo": "Hilux", "anos": [{ "anoInicio": 2016, "anoFim": 2022, "motores": ["2.8 Diesel"] }] }
+    ]
+  }
+]

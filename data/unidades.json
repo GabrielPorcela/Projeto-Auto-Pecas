@@ -1,0 +1,35 @@
+[
+  {
+    "id": "matriz",
+    "nome": "Matriz",
+    "cidade": null,
+    "endereco": null,
+    "telefone": "51 3579 7200",
+    "whatsapp": null,
+    "horario": null,
+    "coordenadas": null,
+    "demo": true
+  },
+  {
+    "id": "unidade-02",
+    "nome": "Unidade 02",
+    "cidade": null,
+    "endereco": null,
+    "telefone": null,
+    "whatsapp": null,
+    "horario": null,
+    "coordenadas": null,
+    "demo": true
+  },
+  {
+    "id": "unidade-03",
+    "nome": "Unidade 03",
+    "cidade": null,
+    "endereco": null,
+    "telefone": null,
+    "whatsapp": null,
+    "horario": null,
+    "coordenadas": null,
+    "demo": true
+  }
+]

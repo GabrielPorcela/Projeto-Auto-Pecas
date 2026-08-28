@@ -1,0 +1,74 @@
+<!--META {"title":"Encontre sua Peça | Passini Distribuidora de Peças","description":"Encontre a peça certa por busca inteligente, por veículo, por código ou identificando por foto.","active":"busca","scripts":["pages/busca.js"],"mainClass":"container page-main"}-->
+  <span class="eyebrow">Encontre sua peça</span>
+  <h1 class="page-title search-hero-title">Encontre exatamente o que você precisa</h1>
+
+  <div class="search-box">
+    <div class="search-box__row">
+      <input class="search-box__input" type="text" placeholder="Digite o veículo, peça, código ou o que você está procurando..." id="busca-input" autocomplete="off">
+      <button class="btn btn--yellow search-box__btn" type="button" id="busca-btn">Encontrar minha peça</button>
+    </div>
+    <div class="hero__search-suggestions" id="busca-suggestions" role="listbox" hidden></div>
+  </div>
+
+  <div class="find-cards-grid" style="margin-top:24px">
+    <a href="ia.html" class="find-card">
+      <span class="find-card__icon">🤖</span>
+      <h3 class="find-card__title">Busca inteligente</h3>
+      <p class="find-card__desc">Descreva o que você precisa e nosso assistente ajuda a encontrar a peça.</p>
+      <span class="find-card__cta">Conversar →</span>
+    </a>
+    <a href="busca.html" class="find-card">
+      <span class="find-card__icon">🚗</span>
+      <h3 class="find-card__title">Por veículo</h3>
+      <p class="find-card__desc">Selecione marca, modelo, ano e motorização.</p>
+      <span class="find-card__cta">Selecionar →</span>
+    </a>
+    <a href="resultados.html" class="find-card">
+      <span class="find-card__icon">🔎</span>
+      <h3 class="find-card__title">Por código</h3>
+      <p class="find-card__desc">Digite o código da peça.</p>
+      <span class="find-card__cta">Buscar →</span>
+    </a>
+    <a href="busca.html" class="find-card">
+      <span class="find-card__icon">📷</span>
+      <h3 class="find-card__title">Identificar peça</h3>
+      <p class="find-card__desc">Envie uma foto e descubra qual peça pode ser.</p>
+      <span class="find-card__cta">Enviar foto →</span>
+    </a>
+  </div>
+
+  <div class="dual-finder">
+    <div>
+      <h2>Selecione seu veículo</h2>
+      <form class="vehicle-finder-fields" style="margin-top:22px" id="busca-vehicle-form" data-vehicle-form>
+        <label class="vehicle-field">
+          <span class="vehicle-field__label">Marca</span>
+          <select class="vehicle-field__select" name="marca" data-field="marca" required></select>
+        </label>
+        <label class="vehicle-field">
+          <span class="vehicle-field__label">Modelo</span>
+          <select class="vehicle-field__select" name="modelo" data-field="modelo" required disabled></select>
+        </label>
+        <label class="vehicle-field">
+          <span class="vehicle-field__label">Ano</span>
+          <select class="vehicle-field__select" name="ano" data-field="ano" required disabled></select>
+        </label>
+        <label class="vehicle-field">
+          <span class="vehicle-field__label">Motor</span>
+          <select class="vehicle-field__select" name="motor" data-field="motor" required disabled></select>
+        </label>
+        <button type="submit" class="btn btn--navy btn--block" style="margin-top:18px; grid-column: 1 / -1">Ver peças compatíveis</button>
+      </form>
+    </div>
+    <div>
+      <h2>Identificar por foto</h2>
+      <p class="section-lead" style="font-size:16px">Envie uma foto da peça. Nosso especialista analisa e retorna as opções compatíveis.</p>
+      <div class="upload-box">
+        <div class="upload-box__icon">📷</div>
+        <div class="upload-box__title">Arraste a foto ou toque para enviar</div>
+        <div class="upload-box__hint">JPG ou PNG até 8 MB</div>
+        <a href="ia.html" class="upload-box__btn" style="display:inline-block; text-decoration:none">Selecionar arquivo</a>
+      </div>
+      <p class="demo-notice">Interface de demonstração: a identificação automática por imagem ainda não está ativa.</p>
+    </div>
+  </div>

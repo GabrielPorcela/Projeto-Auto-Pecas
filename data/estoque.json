@@ -1,0 +1,10 @@
+[
+  { "produtoId": "bs-pf-1042", "unidadeId": "matriz", "quantidade": 12, "disponivel": true },
+  { "produtoId": "mn-ad-3318", "unidadeId": "unidade-02", "quantidade": 6, "disponivel": true },
+  { "produtoId": "mf-hu-7020", "unidadeId": "unidade-03", "quantidade": 2, "disponivel": true },
+  { "produtoId": "sc-ke-8804", "unidadeId": "matriz", "quantidade": 0, "disponivel": false },
+  { "produtoId": "fx-bd-5561", "unidadeId": "unidade-02", "quantidade": 9, "disponivel": true },
+  { "produtoId": "ub-ba-2210", "unidadeId": "matriz", "quantidade": 7, "disponivel": true },
+  { "produtoId": "ct-cd-1180", "unidadeId": "unidade-03", "quantidade": 5, "disponivel": true },
+  { "produtoId": "tr-pt-2290", "unidadeId": "unidade-02", "quantidade": 8, "disponivel": true }
+]

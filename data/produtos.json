@@ -1,0 +1,135 @@
+[
+  {
+    "id": "bs-pf-1042",
+    "slug": "bs-pf-1042-pastilha-freio-dianteira-bosch",
+    "nome": "Pastilha de Freio Dianteira",
+    "marca": "Bosch",
+    "codigo": "BS-PF-1042",
+    "categoriaId": "freios",
+    "descricao": "Jogo de pastilhas de freio dianteiras para aplicação em linha leve. Dados técnicos completos serão importados do catálogo oficial.",
+    "preco": null,
+    "imagens": ["imagem/produtos/placeholder-freios.svg"],
+    "compatibilidades": [
+      { "marca": "Chevrolet", "modelo": "Onix", "motor": "1.0 Turbo", "anoInicio": 2019, "anoFim": 2023 },
+      { "marca": "Chevrolet", "modelo": "Onix Plus", "motor": "1.0 Turbo", "anoInicio": 2020, "anoFim": 2023 },
+      { "marca": "Chevrolet", "modelo": "Prisma", "motor": "1.4", "anoInicio": 2013, "anoFim": 2019 }
+    ],
+    "relacionados": ["mn-ad-3318", "mf-hu-7020", "sc-ke-8804", "fx-bd-5561"],
+    "demo": true
+  },
+  {
+    "id": "mn-ad-3318",
+    "slug": "mn-ad-3318-amortecedor-dianteiro-monroe",
+    "nome": "Amortecedor Dianteiro",
+    "marca": "Monroe",
+    "codigo": "MN-AD-3318",
+    "categoriaId": "suspensao",
+    "descricao": "Amortecedor dianteiro para linha leve. Dados técnicos completos serão importados do catálogo oficial.",
+    "preco": null,
+    "imagens": ["imagem/produtos/placeholder-suspensao.svg"],
+    "compatibilidades": [
+      { "marca": "Toyota", "modelo": "Corolla", "motor": "1.8", "anoInicio": 2015, "anoFim": 2020 },
+      { "marca": "Toyota", "modelo": "Corolla", "motor": "2.0", "anoInicio": 2015, "anoFim": 2020 }
+    ],
+    "relacionados": ["bs-pf-1042", "mf-hu-7020"],
+    "demo": true
+  },
+  {
+    "id": "mf-hu-7020",
+    "slug": "mf-hu-7020-filtro-oleo-mann",
+    "nome": "Filtro de Óleo",
+    "marca": "Mann",
+    "codigo": "MF-HU-7020",
+    "categoriaId": "filtros",
+    "descricao": "Filtro de óleo para linha diesel. Dados técnicos completos serão importados do catálogo oficial.",
+    "preco": null,
+    "imagens": ["imagem/produtos/placeholder-filtros.svg"],
+    "compatibilidades": [
+      { "marca": "Toyota", "modelo": "Hilux", "motor": "2.8 Diesel", "anoInicio": 2016, "anoFim": 2022 }
+    ],
+    "relacionados": ["bs-pf-1042", "mn-ad-3318"],
+    "demo": true
+  },
+  {
+    "id": "sc-ke-8804",
+    "slug": "sc-ke-8804-kit-embreagem-sachs",
+    "nome": "Kit de Embreagem",
+    "marca": "Sachs",
+    "codigo": "SC-KE-8804",
+    "categoriaId": "embreagem",
+    "descricao": "Kit de embreagem completo para linha leve. Dados técnicos completos serão importados do catálogo oficial.",
+    "preco": null,
+    "imagens": ["imagem/produtos/placeholder-embreagem.svg"],
+    "compatibilidades": [
+      { "marca": "Volkswagen", "modelo": "Gol", "motor": "1.6", "anoInicio": 2013, "anoFim": 2019 }
+    ],
+    "relacionados": ["bs-pf-1042", "fx-bd-5561"],
+    "demo": true
+  },
+  {
+    "id": "fx-bd-5561",
+    "slug": "fx-bd-5561-disco-freio-ventilado-fremax",
+    "nome": "Disco de Freio Ventilado",
+    "marca": "Fremax",
+    "codigo": "FX-BD-5561",
+    "categoriaId": "freios",
+    "descricao": "Disco de freio ventilado dianteiro. Dados técnicos completos serão importados do catálogo oficial.",
+    "preco": null,
+    "imagens": ["imagem/produtos/placeholder-freios.svg"],
+    "compatibilidades": [
+      { "marca": "Chevrolet", "modelo": "Onix", "motor": "1.0", "anoInicio": 2019, "anoFim": 2023 },
+      { "marca": "Chevrolet", "modelo": "Prisma", "motor": "1.4", "anoInicio": 2013, "anoFim": 2019 }
+    ],
+    "relacionados": ["bs-pf-1042", "tr-pt-2290"],
+    "demo": true
+  },
+  {
+    "id": "ub-ba-2210",
+    "slug": "ub-ba-2210-bomba-dagua-urba",
+    "nome": "Bomba d'Água",
+    "marca": "Urba",
+    "codigo": "UB-BA-2210",
+    "categoriaId": "arrefecimento",
+    "descricao": "Bomba d'água para linha leve. Dados técnicos completos serão importados do catálogo oficial.",
+    "preco": null,
+    "imagens": ["imagem/produtos/placeholder-arrefecimento.svg"],
+    "compatibilidades": [
+      { "marca": "Fiat", "modelo": "Strada", "motor": "1.4", "anoInicio": 2012, "anoFim": 2020 }
+    ],
+    "relacionados": ["ct-cd-1180"],
+    "demo": true
+  },
+  {
+    "id": "ct-cd-1180",
+    "slug": "ct-cd-1180-correia-dentada-contitech",
+    "nome": "Correia Dentada",
+    "marca": "Contitech",
+    "codigo": "CT-CD-1180",
+    "categoriaId": "correias",
+    "descricao": "Correia dentada de sincronismo. Dados técnicos completos serão importados do catálogo oficial.",
+    "preco": null,
+    "imagens": ["imagem/produtos/placeholder-correias.svg"],
+    "compatibilidades": [
+      { "marca": "Fiat", "modelo": "Palio", "motor": "1.0", "anoInicio": 2010, "anoFim": 2017 },
+      { "marca": "Fiat", "modelo": "Palio", "motor": "1.4", "anoInicio": 2010, "anoFim": 2017 }
+    ],
+    "relacionados": ["ub-ba-2210"],
+    "demo": true
+  },
+  {
+    "id": "tr-pt-2290",
+    "slug": "tr-pt-2290-pastilha-freio-traseira-trw",
+    "nome": "Pastilha de Freio Traseira",
+    "marca": "TRW",
+    "codigo": "TR-PT-2290",
+    "categoriaId": "freios",
+    "descricao": "Jogo de pastilhas de freio traseiras para aplicação em linha leve. Dados técnicos completos serão importados do catálogo oficial.",
+    "preco": null,
+    "imagens": ["imagem/produtos/placeholder-freios.svg"],
+    "compatibilidades": [
+      { "marca": "Chevrolet", "modelo": "Onix", "motor": "1.0 Turbo", "anoInicio": 2020, "anoFim": 2023 }
+    ],
+    "relacionados": ["bs-pf-1042", "fx-bd-5561"],
+    "demo": true
+  }
+]

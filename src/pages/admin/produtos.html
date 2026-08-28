@@ -1,0 +1,21 @@
+<!--META {"title":"Produtos | Painel Administrativo Passini","description":"Lista de produtos do catálogo de demonstração.","active":null,"mainClass":"container page-main","scripts":["pages/admin/produtos.js"]}-->
+  <span class="eyebrow">Área interna</span>
+  <h1 class="page-title">Produtos</h1>
+  <div class="admin-banner">Lista somente leitura de <code>data/produtos.json</code>. Cadastrar/editar/remover de verdade requer um backend — fora do escopo deste protótipo.</div>
+
+  <nav class="admin-nav">
+    <a href="index.html">Dashboard</a>
+    <a href="produtos.html" aria-current="page">Produtos</a>
+    <a href="estoque.html">Estoque</a>
+    <a href="orcamentos.html">Orçamentos</a>
+    <a href="leads.html">Leads</a>
+  </nav>
+
+  <div class="admin-table-wrap">
+    <table class="admin-table">
+      <thead>
+        <tr><th>Nome</th><th>Marca</th><th>Código</th><th>Categoria</th><th>Preço</th></tr>
+      </thead>
+      <tbody id="admin-produtos-body"></tbody>
+    </table>
+  </div>
